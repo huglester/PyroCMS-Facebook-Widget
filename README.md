@@ -12,7 +12,7 @@ I would appreciate attribution if you use the code.
 
 The widget should be installed in one of the following locations:
 
- * The /addons/<site-ref>/widgets/facebook
+ * The /addons/[site-ref]/widgets/facebook
  * The /addons/shared_addons/widgets/facebook
 
 Once you have uploaded the *facebook* folder, navigate to your **PyroCMS backend**, and to **Content** > **Widgets**
