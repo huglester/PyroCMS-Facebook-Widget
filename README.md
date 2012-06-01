@@ -1,7 +1,7 @@
 PyroCMS Facebook Widget
 =======================
 
-This PyroCMS widget allows you to display facebook posts from a user or page in a widget area such as a sidebar.
+This PyroCMS widget allows you to display facebook posts from a user or page in a widget area such as a sidebar, you may have multiple instances of the widget which use the same cached feed.
 
 ### Licence
 
@@ -23,7 +23,6 @@ Add the widget by dragging the **Facebook Feed** widget into the widget area of 
  * Facebook app secret key
  * Username
  * Number of items
- * Number of seconds to cache posts for *600 seconds is equal to 10 minutes*
 
 #### Facebook Application
 
