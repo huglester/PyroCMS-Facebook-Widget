@@ -27,7 +27,7 @@ class Widget_Facebook extends Widgets
 	public $website = 'http://joelvardy.com/';
 
 	/* Widget version */
-	public $version = '1.0';
+	public $version = '1.1';
 
 	/* Widget fields */
 	public $fields = array(
@@ -50,11 +50,6 @@ class Widget_Facebook extends Widgets
 			'field' => 'number',
 			'label' => 'Number of posts',
 			'rules' => 'numeric'
-		),
-		array(
-			'field' => 'cache',
-			'label' => 'Number of Seconds to Cache Posts for',
-			'rules' => 'numeric'
 		)
 	);
 
@@ -63,6 +58,9 @@ class Widget_Facebook extends Widgets
 
 	/* Feed URL */
 	private $feed_url = 'https://graph.facebook.com/[USERNAME]/feed/';
+
+	/* Duration to cache feed for */
+	private $cache_duration = 600;
 
 
 	/**
@@ -149,7 +147,7 @@ class Widget_Facebook extends Widgets
 			}
 
 			/* Write posts to cache */
-			$this->pyrocache->write($posts, 'facebook-'.$options['username'], $options['cache']);
+			$this->pyrocache->write($posts, 'facebook-'.$options['username'], $this->cache_duration);
 
 		}
 

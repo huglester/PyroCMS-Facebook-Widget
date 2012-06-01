@@ -15,8 +15,4 @@
 		<label>Number of Items</label>
 		<?php echo form_input('number', $options['number']); ?>
 	</li>
-	<li class="even">
-		<label>Number of Seconds to Cache Posts for</label>
-		<?php echo form_input('cache', $options['cache']); ?>
-	</li>
 </ol>
